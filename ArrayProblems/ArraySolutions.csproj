@@ -49,7 +49,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArraySolutionMainClass.cs" />
+    <Compile Include="LargestNumber.cs" />
+    <Compile Include="MaxDistance.cs" />
     <Compile Include="PickFromBothEnds.cs" />
+    <Compile Include="MinLightActivation.cs" />
+    <Compile Include="MinStepInInfiniteGrid.cs" />
+    <Compile Include="SortArrayWithSquares.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />

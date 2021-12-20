@@ -50,7 +50,7 @@
   <ItemGroup>
     <Compile Include="ArrayPermutation.cs" />
     <Compile Include="ArraySolutionMainClass.cs" />
-    <Compile Include="HRTest.cs" />
+    <Compile Include="HackerRank.cs" />
     <Compile Include="LargestNumber.cs" />
     <Compile Include="MakeEqualElement.cs" />
     <Compile Include="MaxDistance.cs" />

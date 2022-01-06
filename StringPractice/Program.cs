@@ -10,8 +10,8 @@ namespace StrignPractice
     {
         static void Main(string[] args)
         {
-            WordsCount wc = new WordsCount();
-            Console.WriteLine(wc.solve("apoorva raju is good girl"));
+            LetterPhone wc = new LetterPhone();
+            Console.WriteLine(wc.letterCombinations("78875"));
         }
     }
 }

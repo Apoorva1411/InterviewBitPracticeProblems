@@ -6,8 +6,34 @@ using System.Threading.Tasks;
 
 namespace BinarySearchPracticeProblem
 {
+
     public class RotatedSortedSearch
     {
+        public List<int> slidingMaximum(List<int> nums, int k)
+        {
+            var result = new int[nums.Count - k + 1];
+            if (nums == null || nums.Count == 0)
+                return result.ToList();
+
+            List<int> deque = new List<int>();
+            for (int i = 0; i < nums.Count; i++)
+            {
+                if (deque.Count > 0 && deque[0] == i - k)
+                    deque.RemoveAt(0);
+
+                while (deque.Count > 0 && nums[deque[deque.Count - 1]] < nums[i])
+                {
+                    deque.RemoveAt(deque.Count - 1);
+                }
+
+                deque.Add(i);
+
+                if (i + 1 >= k)
+                    result[i + 1 - k] = nums[deque[0]];
+            }
+
+            return result.ToList();
+        }
         public int search(List<int> A, int B)
         {
             int retVal = -1;
